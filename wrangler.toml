@@ -16,15 +16,16 @@ CUSTOM_DOMAIN = "yuukibaby.top"
 
 [env.production]
 name = "cloudflare-docker-proxy"
-# routes = [
-#   { pattern = "docker.libcuda.so", custom_domain = true },
-#   { pattern = "quay.libcuda.so", custom_domain = true },
-#   { pattern = "gcr.libcuda.so", custom_domain = true },
-#   { pattern = "k8s-gcr.libcuda.so", custom_domain = true },
-#   { pattern = "k8s.libcuda.so", custom_domain = true },
-#   { pattern = "ghcr.libcuda.so", custom_domain = true },
-#   { pattern = "cloudsmith.libcuda.so", custom_domain = true },
-# ]
+routes = [
+  { pattern = "docker.yuukibaby.top", custom_domain = true },
+  { pattern = "quay.yuukibaby.top", custom_domain = true },
+  { pattern = "gcr.yuukibaby.top", custom_domain = true },
+  { pattern = "k8s-gcr.yuukibaby.top", custom_domain = true },
+  { pattern = "k8s.yuukibaby.top", custom_domain = true },
+  { pattern = "ghcr.yuukibaby.top", custom_domain = true },
+  { pattern = "cloudsmith.yuukibaby.top", custom_domain = true },
+  { pattern = "docker-staging.yuukibaby.top", custom_domain = true },
+]
 
 [env.production.vars]
 MODE = "production"
