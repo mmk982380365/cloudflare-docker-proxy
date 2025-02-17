@@ -17,7 +17,7 @@ CUSTOM_DOMAIN = "yuukibaby.top"
 [env.production]
 name = "cloudflare-docker-proxy"
 routes = [
-  { pattern = "docker.yuukibaby.top", custom_domain = true },
+  { pattern = "dockernew.yuukibaby.top", custom_domain = true },
   { pattern = "quay.yuukibaby.top", custom_domain = true },
   { pattern = "gcr.yuukibaby.top", custom_domain = true },
   { pattern = "k8s-gcr.yuukibaby.top", custom_domain = true },
